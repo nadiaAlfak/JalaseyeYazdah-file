@@ -17,6 +17,7 @@ public class SaveFile {
     public  void add(){
         Karbar karbar=new Karbar();
         Scanner scanner=new Scanner(System.in);
+        while (scanner.hasNext()){
         System.out.println("name khod ra vared koni");
         karbar.setEsm(scanner.next());
         System.out.println("name khanevadegi ra vared konid");
@@ -24,7 +25,7 @@ public class SaveFile {
         System.out.println("sale tavalod khod ra vared konid");
         karbar.setTarikheTavalod(scanner.next());
         khoroji.format("%s %s %s\n",karbar.getEsm(),karbar.getFamil(),karbar.getTarikheTavalod());
-    }
+    }}
     public void close(){
         khoroji.close();
     }
