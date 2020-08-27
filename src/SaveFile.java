@@ -19,6 +19,7 @@ public class SaveFile {
     public void add() {
         Karbar karbar = new Karbar();
         Scanner scanner = new Scanner(System.in);
+
         int tekrar=0;
         while (tekrar<2) {
             tekrar++;
@@ -33,7 +34,8 @@ public class SaveFile {
     }
 
     public void close() {
-        khoroji.close();
+        if (khoroji != null) {
+            khoroji.close();
+        }
     }
-
 }
